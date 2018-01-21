@@ -1,6 +1,6 @@
 # HelloAndroid
-* A single-screen app that displays information about Udacity,
 [![Image](image/udacityInfoPage.gif)](Image)
+* A single-screen app that displays information about Udacity,
 
 ## Getting Started
 
