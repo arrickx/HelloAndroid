@@ -4,7 +4,7 @@
 
 ## Getting Started
 
-* You can *[clone](TODO)* or *[download](TODO)* this project via [GitHub](https://github.com) to your local machine.
+* You can *[clone](https://github.com/arrickx/HelloAndroid.git)* or *[download](https://github.com/arrickx/HelloAndroid.git)* this project via [GitHub](https://github.com) to your local machine.
 * Download and Install *[Android Studio](https://developer.android.com/studio/index.html)*
 
 ### How to use
