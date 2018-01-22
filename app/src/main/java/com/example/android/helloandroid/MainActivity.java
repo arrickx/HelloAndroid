@@ -12,14 +12,18 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-
+    /**
+     * This app provide contact information for Udacity.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
 
-
+    /**
+     * This function can open up the contact and pre-fill all the info for you to save.
+     */
     public void insertContact(View view) {
         Intent intent = new Intent(Intent.ACTION_INSERT);
         intent.setType(ContactsContract.Contacts.CONTENT_TYPE);
@@ -32,6 +36,9 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * This function can help you to open gmail app and fill out udacity email and receiver.
+     */
     public void sentEmail(View view) {
         Intent intent = new Intent(Intent.ACTION_SENDTO);
         intent.setData(Uri.parse("mailto:"));
@@ -42,6 +49,9 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * This function can help you to open dialer to call udacity.
+     */
     public void dialPhoneNumber(View view) {
         Intent intent = new Intent(Intent.ACTION_DIAL);
         intent.setData(Uri.parse("tel:" + getString(R.string.telephone)));
@@ -50,7 +60,9 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-
+    /**
+     * This function can help you to open google maps and locate where Udacity is at.
+     */
     public void direction(View view) {
         Intent intent = new Intent(android.content.Intent.ACTION_VIEW,
                 Uri.parse("https://www.google.com/maps/search/?api=1&query=" + getString(R.string.address)));
@@ -59,6 +71,9 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * This function can help you to open the browser and open up the udacity website.
+     */
     public void openWebPage(View view) {
         Uri webpage = Uri.parse("https://www.udacity.com");
         Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
