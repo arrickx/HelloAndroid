@@ -9,8 +9,8 @@
         android:layout_height="400dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="20dp"
-        android:scaleType="fitCenter"
         android:onClick="openWebPage"
+        android:scaleType="fitCenter"
         android:src="@drawable/udacity" />
 
     <TextView
